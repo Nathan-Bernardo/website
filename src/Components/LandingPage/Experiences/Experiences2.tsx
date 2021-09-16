@@ -25,12 +25,12 @@ const stories3 = [
   "Revamp the neural network controller to achieve safe training using proximal policy optimization.",
   "Apply policy-gradient algorithms to guarantee safety during the learning and execution phase.",
   "Integrated methods in OpenAI’s Safety Gym simulator for performance measure and debugging.",
-  "Researched variants of policy gradient algorithms such as PPO, TRPO, DDPG  with constraints and their application to safety reinforcement learning."
-]
+  "Researched variants of policy gradient algorithms such as PPO, TRPO, DDPG  with constraints and their application to safety reinforcement learning.",
+];
 
-const Experiences = (): JSX.Element => {
+const Experiences2 = (): JSX.Element => {
   return (
-    <div className="experiences">
+    <div className="experiences2">
       Experiences
       <ExperienceBlock
         start="Mar 2021"
@@ -60,4 +60,4 @@ const Experiences = (): JSX.Element => {
   );
 };
 
-export default Experiences;
+export default Experiences2;

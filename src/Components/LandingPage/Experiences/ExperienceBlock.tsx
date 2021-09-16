@@ -23,8 +23,8 @@ const ExperienceBlock = ({
   stories,
 }: Experiences): JSX.Element => {
   return (
-    <div className="experience-block">
-      <div className="experience-timeline">
+    <div className="experience-block2">
+      <div className="experience-timeline2">
         <Timeline>
           <TimelineItem>
             <TimelineSeparator>
@@ -43,22 +43,22 @@ const ExperienceBlock = ({
           </TimelineItem>
         </Timeline>
       </div>
-      <div className="experience-overview">
-        <div className="experience-overview-title">
+      <div className="experience-overview2">
+        <div className="experience-overview-title2">
           {title}
-          <div className="company-box">
+          <div className="company-box2">
             {company}, {type}
           </div>
         </div>
       </div>
 
-      <div className="experience-description">
+      <div className="experience-description2">
         <ul>
           {stories?.map((story) => (
             <li>{story}</li>
           ))}
         </ul>
-      </div>
+      </div> 
     </div>
   );
 };
