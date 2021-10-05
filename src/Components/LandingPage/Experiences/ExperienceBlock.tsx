@@ -23,42 +23,43 @@ const ExperienceBlock = ({
   stories,
 }: Experiences): JSX.Element => {
   return (
-    <div className="experience-block2">
-      <div className="experience-timeline2">
-        <Timeline>
-          <TimelineItem>
-            <TimelineSeparator>
-              <TimelineDot style={{ backgroundColor: "black" }} />
-              <TimelineConnector
-                style={{ height: "230px", backgroundColor: "black" }}
-              />
-            </TimelineSeparator>
-            <TimelineContent>{start}</TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineSeparator>
-              <TimelineDot style={{ backgroundColor: "black" }} />
-            </TimelineSeparator>
-            <TimelineContent>{end}</TimelineContent>
-          </TimelineItem>
-        </Timeline>
-      </div>
-      <div className="experience-overview2">
-        <div className="experience-overview-title2">
-          {title}
-          <div className="company-box2">
-            {company}, {type}
+    <div className="experience-block grid grid--2-cols">
+      <div className="experience-info grid grid--2-cols2">
+        <div className="experience-timeline">
+          <Timeline>
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineDot style={{ backgroundColor: "black" }} />
+                <TimelineConnector
+                  style={{ height: "230px", backgroundColor: "black" }}
+                />
+              </TimelineSeparator>
+              <TimelineContent>{start}</TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineDot style={{ backgroundColor: "black" }} />
+              </TimelineSeparator>
+              <TimelineContent>{end}</TimelineContent>
+            </TimelineItem>
+          </Timeline>
+        </div>
+        <div className="experience-overview">
+          <div className="experience-job-title">
+            {title}
+            <div className="company-box">
+              {company}, {type}
+            </div>
           </div>
         </div>
       </div>
-
-      <div className="experience-description2">
+      <div className="experience-description">
         <ul>
           {stories?.map((story) => (
             <li>{story}</li>
           ))}
         </ul>
-      </div> 
+      </div>
     </div>
   );
 };

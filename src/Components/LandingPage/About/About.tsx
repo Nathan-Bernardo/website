@@ -1,10 +1,10 @@
-const About2 = (): JSX.Element => {
+const About = (): JSX.Element => {
   return (
     <>
-      <div className="about2">
+      <section className="about">
         About
-        <div className="about-block2">
-          <div className="about-text-block2">
+        <div className="about-block">
+          <div className="about-text-block">
             I graduated at{" "}
             <span className="text-green">University of California, Irvine</span>{" "}
             with a B.S. degree in Electrical Engineering. I specialized in
@@ -14,8 +14,8 @@ const About2 = (): JSX.Element => {
             modeling the human brain.
           </div>
         </div>
-        <div className="about-block22">
-          <div className="about-text-block2">
+        <div className="about-block">
+          <div className="about-text-block">
           Though this website displays my portfolio/resume, I’m also making this
           a platform to educate people (both technical and nontechnical) on a
           range of topics such as battery technology, autonomous vehicles, and
@@ -23,9 +23,9 @@ const About2 = (): JSX.Element => {
           well.
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
 
-export default About2;
+export default About;

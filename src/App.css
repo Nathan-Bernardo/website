@@ -1,17 +1,196 @@
-*,
-::before,
-::after {
+/* 
+
+LETTER SPACING 
+default: 5px
+1rem
+
+BORDER RADIUS
+default: 8px;
+
+
+
+*/
+
+
+
+
+* {
+  padding: 0;
+  margin: 0 auto;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   font-family: "Roboto Slab";
 }
 
+li {
+  margin-top: 20px;
+}
+
+/* 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86/ 98*/
+
+/* 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+
+/*************************/
+/* GENERAL RESUABLE COMPONENTS */
+/*************************/
+
 .text-green {
   color: #7DBA36;
 }
 
-li {
-  margin-top: 20px;
+.grid {
+  display: grid;
 }
+
+.grid--2-cols {
+  gap: 15.6rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--2-cols2 {
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  gap: 9.6rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/*************************/
+/* HEADER */
+/*************************/
+
+.main-nav {
+  display: grid;
+  max-width: 192rem;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 2rem;
+  justify-content: end;
+  background-color: #EBECF0;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: black;
+  margin-right: 3rem;
+}
+
+
+/*************************/
+/* HOME */
+/*************************/
+.home {
+  display: flex;
+  max-width: 192rem;
+  justify-content: center;
+  text-align: center;
+  font-size: 6.2rem;
+  letter-spacing: 1rem;
+  background-color: #EBECF0;
+  color: #444444;
+}
+
+.home-text-box{
+  width: 10em;
+  margin: 3em;
+}
+
+
+/*************************/
+/* ABOUT*/
+/*************************/
+.about {
+  display: flex;
+  max-width: 192rem;
+  flex-direction: column;
+  padding: 4.4rem 12.8rem;
+  font-size: 6.2rem; 
+}
+
+.about-block {
+  width: 90rem;
+  margin: 4.4rem 70rem 0 0;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+
+.about-block:nth-child(2) {
+  margin-left: 78rem;
+}
+
+.about-text-block {
+  letter-spacing: 5px;
+  padding: 3.6rem 3.6rem;
+  font-size: 3.6rem;
+}
+
+/*************************/
+/* Experiences */
+/*************************/
+.experiences {
+  max-width: 192rem;
+  font-size: 6.2rem;
+  padding: 4.4rem 12.8rem;
+}
+
+.experience-block {
+  margin: 4.4rem 70rem 0 0;
+}
+
+.experience-timeline {
+  font-size: 2rem;
+}
+
+.experience-info { 
+  margin: 5.2rem 0 0 0;
+}
+
+.experience-overview {
+  width: 28rem;
+  margin: 4.4rem 0 0 0;
+  font-size: 3.6rem;
+}
+
+.experience-job-title {
+  margin: 4.4rem 0 0 0;
+  font-size: 3rem;
+  color: #7DBA36;
+}
+
+.company-box {
+  padding: 0 1rem;
+  font-size: 2.6rem;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.experience-description {
+  width: 100rem;
+  padding: 1rem 4.4rem;
+  border: 1px solid #000;
+  border-radius: 8px;
+  font-size: 2rem;
+}
+
+
+
+/* Rectangle 34 */
+
+/* 
+position: absolute;
+width: 405px;
+height: 283px;
+
+background: #FFFFFF;
+border: 1px solid #6B778C;
+box-sizing: border-box;
+border-radius: 8px; */

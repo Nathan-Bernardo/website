@@ -8,9 +8,7 @@ const leadership1 = [
   "Planned and organized machine learning workshops with community colleges.",
 ];
 
-const leadership2 = [
-  ""
-]
+const leadership2 = [""];
 
 const Leadership = (): JSX.Element => {
   return (
@@ -24,7 +22,7 @@ const Leadership = (): JSX.Element => {
         type="full-time"
         stories={leadership1}
       />
-       <ExperienceBlock
+      <ExperienceBlock
         start="July 2020"
         end="Present"
         title="President"
