@@ -1,13 +1,10 @@
 import About from "./About/About";
 import Experiences from "./Experiences/Experiences";
-import Leadership from "./Leadership/Leadership";
 import Projects from "./Projects/Projects";
-import Navbar from "../Shared/Navbar";
 
-const LandingPage2 = (): JSX.Element => {
+const LandingPage = (): JSX.Element => {
   return (
     <>
-      <Navbar />
       <main>
         <section className="home">
           <div className="home-text-box">
@@ -18,9 +15,10 @@ const LandingPage2 = (): JSX.Element => {
         </section>
         <About />
         <Experiences />
+        <Projects />
       </main>
     </>
   );
 };
 
-export default LandingPage2;
+export default LandingPage;

@@ -8,11 +8,7 @@ BORDER RADIUS
 default: 8px;
 
 
-
 */
-
-
-
 
 * {
   padding: 0;
@@ -36,13 +32,12 @@ li {
 
 /* 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
 
-
 /*************************/
 /* GENERAL RESUABLE COMPONENTS */
 /*************************/
 
 .text-green {
-  color: #7DBA36;
+  color: #7dba36;
 }
 
 .grid {
@@ -64,6 +59,11 @@ li {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid--4-cols {
+  gap: 9.6rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 /*************************/
 /* HEADER */
 /*************************/
@@ -74,7 +74,7 @@ li {
   grid-template-columns: repeat(3, auto);
   grid-gap: 2rem;
   justify-content: end;
-  background-color: #EBECF0;
+  background-color: #ebecf0;
 }
 
 .nav-link {
@@ -84,10 +84,10 @@ li {
   margin-right: 3rem;
 }
 
-
 /*************************/
 /* HOME */
 /*************************/
+
 .home {
   display: flex;
   max-width: 192rem;
@@ -95,25 +95,25 @@ li {
   text-align: center;
   font-size: 6.2rem;
   letter-spacing: 1rem;
-  background-color: #EBECF0;
+  background-color: #ebecf0;
   color: #444444;
 }
 
-.home-text-box{
+.home-text-box {
   width: 10em;
   margin: 3em;
 }
 
-
 /*************************/
 /* ABOUT*/
 /*************************/
+
 .about {
   display: flex;
   max-width: 192rem;
   flex-direction: column;
   padding: 4.4rem 12.8rem;
-  font-size: 6.2rem; 
+  font-size: 6.2rem;
 }
 
 .about-block {
@@ -124,7 +124,7 @@ li {
 }
 
 .about-block:nth-child(2) {
-  margin-left: 78rem;
+  margin-left: 77rem;
 }
 
 .about-text-block {
@@ -136,6 +136,7 @@ li {
 /*************************/
 /* Experiences */
 /*************************/
+
 .experiences {
   max-width: 192rem;
   font-size: 6.2rem;
@@ -150,7 +151,7 @@ li {
   font-size: 2rem;
 }
 
-.experience-info { 
+.experience-info {
   margin: 5.2rem 0 0 0;
 }
 
@@ -161,9 +162,9 @@ li {
 }
 
 .experience-job-title {
-  margin: 4.4rem 0 0 0;
+  margin: 5.2rem 0 0 0;
   font-size: 3rem;
-  color: #7DBA36;
+  color: #7dba36;
 }
 
 .company-box {
@@ -181,6 +182,30 @@ li {
   font-size: 2rem;
 }
 
+/*************************/
+/* Projects */
+/*************************/
+.projects {
+  max-width: 192rem;
+  font-size: 6.2rem;
+  padding: 4.4rem 12.8rem;
+}
+
+/*************************/
+/* Footer*/
+/*************************/
+.footer {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin-top: 9.6rem;
+}
+
+.footer-icons {
+  display: flex;
+  padding: 0 120rem;
+  margin: 1rem 0 2rem 0;
+}
 
 
 /* Rectangle 34 */

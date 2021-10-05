@@ -24,13 +24,13 @@ const navbarData: navData[] = [
 
 const Navbar = (): JSX.Element => {
   return (
-    <nav >
+    <nav>
       <ul className="main-nav">
-        {navbarData.map((item, index) => (
-          <li key={index} className={item.cName}>
-            {item.name}
-          </li>
-        ))}
+          {navbarData.map((item, index) => (
+            <li key={index} className={item.cName}>
+              {item.name}
+            </li>
+          ))}
       </ul>
     </nav>
   );

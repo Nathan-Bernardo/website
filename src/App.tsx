@@ -1,13 +1,19 @@
 import React from "react";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
-import LandingPage2 from "./Components/LandingPage/LandingPage2";
+import LandingPage from "./Components/LandingPage/LandingPage";
+import Navbar from "./Components/Shared/Navbar";
+import Footer from "./Components/Shared/Footer";
 
 function App() {
   return (
-    <Switch>
-      <Route path="/" component={LandingPage2} />
-    </Switch>
+    <>
+      <Navbar />
+      <Switch>
+        <Route path="/" component={LandingPage} />
+      </Switch>
+      <Footer />
+    </>
   );
 }
 
